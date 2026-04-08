@@ -2,11 +2,12 @@ package report
 
 import (
 	"fmt"
-	report2 "github.com/ScoreTrak/ScoreTrak/pkg/report"
-	"github.com/gofrs/uuid"
 	"reflect"
+	"testing"
+
+	"github.com/gofrs/uuid"
+	report2 "github.com/ubnetdef/ScoreTrak/pkg/report"
 )
-import "testing"
 
 func TestReport(t *testing.T) {
 	report := report2.SimpleReport{

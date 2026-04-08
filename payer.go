@@ -2,16 +2,17 @@ package main
 
 import (
 	"flag"
-	"github.com/ScoreTrak/ScoreTrak/pkg/auth"
-	"github.com/ScoreTrak/ScoreTrak/pkg/storage"
-	"github.com/ScoreTrak/payments/report"
-	"github.com/golang-jwt/jwt/v4"
-	authv1 "go.buf.build/grpc/go/scoretrak/scoretrakapis/scoretrak/auth/v1"
-	reportv1 "go.buf.build/grpc/go/scoretrak/scoretrakapis/scoretrak/report/v1"
-	"google.golang.org/grpc"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/golang-jwt/jwt/v4"
+	"github.com/ubnetdef/ScoreTrak/pkg/auth"
+	"github.com/ubnetdef/ScoreTrak/pkg/storage"
+	"github.com/ubnetdef/payments/report"
+	authv1 "github.com/ubnetdef/scoretrakapis/gen/proto/go/scoretrak/auth/v1"
+	reportv1 "github.com/ubnetdef/scoretrakapis/gen/proto/go/scoretrak/report/v1"
+	"google.golang.org/grpc"
 )
 
 var conf *Config

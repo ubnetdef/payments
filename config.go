@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/ScoreTrak/ScoreTrak/pkg/storage"
 	"github.com/jinzhu/configor"
+	"github.com/ubnetdef/ScoreTrak/pkg/storage"
 )
 
 type Config struct {

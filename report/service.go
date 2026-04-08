@@ -1,6 +1,6 @@
 package report
 
-import "github.com/ScoreTrak/ScoreTrak/pkg/report"
+import "github.com/ubnetdef/ScoreTrak/pkg/report"
 
 func TotalServicePoints(s *report.SimpleService) uint64 {
 	if s.Pause {

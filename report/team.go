@@ -1,9 +1,10 @@
 package report
 
 import (
-	"github.com/ScoreTrak/ScoreTrak/pkg/report"
 	"regexp"
 	"strconv"
+
+	"github.com/ubnetdef/ScoreTrak/pkg/report"
 )
 
 func TotalTeamPoints(t *report.SimpleTeam) uint64 {

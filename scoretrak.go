@@ -3,11 +3,12 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"github.com/ScoreTrak/ScoreTrak/pkg/report"
-	authv1 "go.buf.build/grpc/go/scoretrak/scoretrakapis/scoretrak/auth/v1"
-	reportv1 "go.buf.build/grpc/go/scoretrak/scoretrakapis/scoretrak/report/v1"
-	"google.golang.org/grpc/metadata"
 	"log"
+
+	"github.com/ubnetdef/ScoreTrak/pkg/report"
+	authv1 "github.com/ubnetdef/scoretrakapis/gen/proto/go/scoretrak/auth/v1"
+	reportv1 "github.com/ubnetdef/scoretrakapis/gen/proto/go/scoretrak/report/v1"
+	"google.golang.org/grpc/metadata"
 )
 
 func getAuth(acli authv1.AuthServiceClient) (string, error) {

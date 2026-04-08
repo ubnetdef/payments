@@ -1,8 +1,9 @@
 package report
 
 import (
-	"github.com/ScoreTrak/ScoreTrak/pkg/report"
 	"log"
+
+	"github.com/ubnetdef/ScoreTrak/pkg/report"
 )
 
 func PointsPerTeam(r *report.SimpleReport) map[int]uint64 {

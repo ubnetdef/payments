@@ -1,9 +1,10 @@
 package report
 
 import (
-	"github.com/ScoreTrak/ScoreTrak/pkg/report"
-	"github.com/gofrs/uuid"
 	"testing"
+
+	"github.com/gofrs/uuid"
+	"github.com/ubnetdef/ScoreTrak/pkg/report"
 )
 
 func TestHostEnabled(t *testing.T) {
